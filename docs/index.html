@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImmerseDiffusion Project</title>
+    <title>ImmersDiffusion Demos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the ImmerseDiffusion Project</h1>
-    <p>ImmerseDiffusion is a generative model for spatial audio, designed to generate immersive and high-quality spatial soundscapes based on user input.</p>
+    <div class="slider-container">
+        <div class="slide" id="slide-1">
+            <h2>Environment Acoustics Perception</h2>
+            <p><strong>Prompt:</strong> An emergency car siren from very far distance on the left.</p>
+            <audio controls>
+                <source src="audio/demo1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
-    <h2>About the Project</h2>
-    <p>This project focuses on spatial audio generation, making it a key contribution to the field of immersive audio experiences. The model uses a novel approach to synthesize realistic 3D sound environments.</p>
+        <div class="slide" id="slide-2">
+            <h2>Distance Perception</h2>
+            <p><strong>Prompt:</strong> Rhythmic chirping of birds in a damped room.</p>
+            <audio controls>
+                <source src="audio/demo2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li>Generative model for spatial audio based on user input</li>
-        <li>Real-time audio generation with high spatial accuracy</li>
-        <li>Applications in AI, VR, and media industries</li>
-    </ul>
+        <div class="slide" id="slide-3">
+            <h2>Reverberant Environment</h2>
+            <p><strong>Prompt:</strong> Birds singing in a reverberant room.</p>
+            <audio controls>
+                <source src="audio/demo3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
-    <h2>Demo</h2>
-    <p>Check out the demo of the ImmerseDiffusion model <a href="demo_link_here">here</a>.</p>
-    <!-- Replace 'demo_link_here' with the actual demo link -->
+        <div class="slide" id="slide-4">
+            <h2>Close Proximity Perception</h2>
+            <p><strong>Prompt:</strong> An emergency car siren from close distance on the right.</p>
+            <audio controls>
+                <source src="audio/demo4.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
+        <div class="navigation">
+            <button class="prev">&#10094; Previous</button>
+            <button class="next">Next &#10095;</button>
+        </div>
+    </div>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
